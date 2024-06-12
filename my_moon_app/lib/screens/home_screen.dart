@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_moon_app/widgets/custom_dropdown.dart';
 
 class HomeScreen extends StatelessWidget {
   late double _deviceHeight, _deviceWidth;
@@ -13,8 +14,10 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           height: _deviceHeight,
           width: _deviceWidth,
-          padding: EdgeInsets.symmetric(horizontal: _deviceWidth * 0.3),
-          child: _pageTitle(),
+          padding: EdgeInsets.symmetric(horizontal: _deviceWidth * 0.05),
+          child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [_pageTitle(), _destinationDropDown()]),
         ),
       ),
     );
@@ -25,7 +28,7 @@ class HomeScreen extends StatelessWidget {
       decoration: const BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.contain,
-          image: AssetImage("assets/images/moon.jpg"),
+          image: AssetImage("assets/images/moon.png"),
         ),
       ),
     );
@@ -50,16 +53,9 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _destinationDropDown() {
-    List<String> _items = ['James Webb Station', 'Brian Workstation'];
-    return DropdownButton(
-      underline: Container(),
-      value: _items.first,
-      onChanged: (_) {},
-      items: _items.map(
-        (e) {
-          return DropdownMenuItem(value: e, child: Text(e));
-        },
-      ).toList(),
+    return CustomDropdownButton(
+      values: const ['James Webb Station', 'Brian Workstation'],
+      width: _deviceWidth * 0.05,
     );
   }
 }
