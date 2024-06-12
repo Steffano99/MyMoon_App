@@ -17,7 +17,11 @@ class HomeScreen extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: _deviceWidth * 0.05),
           child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [_pageTitle(), _destinationDropDown()]),
+              children: [
+                _pageTitle(),
+                _destinationDropDown(),
+                __astronautInformation(),
+              ]),
         ),
       ),
     );
@@ -57,5 +61,22 @@ class HomeScreen extends StatelessWidget {
       values: const ['James Webb Station', 'Brian Workstation'],
       width: _deviceWidth * 0.05,
     );
+  }
+
+  Widget __astronautInformation() {
+    return Row(children: [
+      CustomDropdownButton(
+        values: const ['1', '2', '3', '4'],
+        width: _deviceWidth * 0.05,
+      ),
+      CustomDropdownButton(
+        values: const ['Atmospheric', 'Lander', 'Orbiter', 'Rover'],
+        width: _deviceWidth * 0.05,
+      ),
+    ]);
+  }
+
+  Widget _ride() {
+    return Container();
   }
 }
