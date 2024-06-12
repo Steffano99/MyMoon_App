@@ -10,9 +10,9 @@ class MoonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(scaffoldBackgroundColor: Color.fromRGBO(7, 31, 53, 1)),
+      theme: ThemeData(scaffoldBackgroundColor: Color.fromRGBO(31, 31, 36, 1)),
       title: 'GoMoon',
-      home: const HomeScreen(),
+      home: HomeScreen(),
     );
   }
 }
