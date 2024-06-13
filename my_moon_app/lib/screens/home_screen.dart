@@ -19,8 +19,8 @@ class HomeScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 _pageTitle(),
-                _destinationDropDown(),
-                __astronautInformation(),
+                _flight(),
+                //__astronautInformation(),
               ]),
         ),
       ),
@@ -59,24 +59,50 @@ class HomeScreen extends StatelessWidget {
   Widget _destinationDropDown() {
     return CustomDropdownButton(
       values: const ['James Webb Station', 'Brian Workstation'],
-      width: _deviceWidth * 0.05,
+      width: _deviceWidth,
     );
   }
 
   Widget __astronautInformation() {
-    return Row(children: [
-      CustomDropdownButton(
-        values: const ['1', '2', '3', '4'],
-        width: _deviceWidth * 0.05,
-      ),
-      CustomDropdownButton(
-        values: const ['Atmospheric', 'Lander', 'Orbiter', 'Rover'],
-        width: _deviceWidth * 0.05,
-      ),
-    ]);
+    return Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          CustomDropdownButton(
+            values: const ['1', '2', '3', '4'],
+            width: _deviceWidth * 0.43,
+          ),
+          CustomDropdownButton(
+            values: const ['Atmospheric', 'Lander', 'Orbiter', 'Rover'],
+            width: _deviceWidth * 0.43,
+          ),
+        ]);
   }
 
-  Widget _ride() {
-    return Container();
+  Widget _flight() {
+    return Container(
+      height: _deviceHeight * 0.25,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisSize: MainAxisSize.max,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          _destinationDropDown(),
+          __astronautInformation(),
+          _flightButton()
+        ],
+      ),
+    );
+  }
+
+  Widget _flightButton() {
+    return MaterialButton(
+      onPressed: () {},
+      child: const Text(
+        'Book Flight',
+        style: TextStyle(color: Colors.blue),
+      ),
+    );
   }
 }

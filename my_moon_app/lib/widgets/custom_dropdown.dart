@@ -10,12 +10,14 @@ class CustomDropdownButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
       width: width,
       decoration: BoxDecoration(
         color: const Color.fromRGBO(53, 53, 53, 1.0),
         borderRadius: BorderRadius.circular(10),
       ),
       child: DropdownButton(
+        borderRadius: BorderRadius.circular(10),
         dropdownColor: const Color.fromRGBO(53, 53, 53, 1.0),
         style: const TextStyle(color: Colors.white),
         underline: Container(),
@@ -28,6 +30,5 @@ class CustomDropdownButton extends StatelessWidget {
         ).toList(),
       ),
     );
-    ;
   }
 }
