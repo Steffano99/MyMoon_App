@@ -15,13 +15,15 @@ class HomeScreen extends StatelessWidget {
           height: _deviceHeight,
           width: _deviceWidth,
           padding: EdgeInsets.symmetric(horizontal: _deviceWidth * 0.05),
-          child: Column(
+          child: Stack(children: [
+            Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                _pageTitle(),
-                _flight(),
-                //__astronautInformation(),
-              ]),
+              mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [_pageTitle(), _flight()],
+            ),
+            Align(alignment: Alignment.center, child: _spaceShipWidget())
+          ]),
         ),
       ),
     );
@@ -29,36 +31,41 @@ class HomeScreen extends StatelessWidget {
 
   Widget _spaceShipWidget() {
     return Container(
+      height: _deviceHeight * 0.5,
+      width: _deviceWidth * 5,
       decoration: const BoxDecoration(
         image: DecorationImage(
-          fit: BoxFit.contain,
-          image: AssetImage("assets/images/moon.png"),
-        ),
+            fit: BoxFit.contain, image: AssetImage('assets/images/astro4.png')),
       ),
     );
   }
 
   Widget _pageTitle() {
-    return const Text.rich(TextSpan(
+    return const Text.rich(
+      TextSpan(
         text: 'SPACE',
         style: TextStyle(
-            color: Color.fromARGB(255, 236, 212, 212),
-            fontSize: 30,
-            fontWeight: FontWeight.w700),
+            color: Colors.white, fontSize: 70, fontWeight: FontWeight.w700),
         children: [
           TextSpan(
             text: 'TRIP',
             style: TextStyle(
-                fontSize: 20,
-                color: Color.fromARGB(255, 137, 160, 223),
+                fontSize: 40,
+                color: Color.fromARGB(255, 187, 235, 16),
                 fontWeight: FontWeight.w700),
           )
-        ]));
+        ],
+      ),
+    );
   }
 
   Widget _destinationDropDown() {
     return CustomDropdownButton(
-      values: const ['James Webb Station', 'Brian Workstation'],
+      values: const [
+        'James Webb Station',
+        'Brian Workstation',
+        'NASA Workstation'
+      ],
       width: _deviceWidth,
     );
   }
@@ -82,6 +89,7 @@ class HomeScreen extends StatelessWidget {
 
   Widget _flight() {
     return Container(
+      margin: const EdgeInsets.only(bottom: 10),
       height: _deviceHeight * 0.25,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -97,11 +105,19 @@ class HomeScreen extends StatelessWidget {
   }
 
   Widget _flightButton() {
-    return MaterialButton(
-      onPressed: () {},
-      child: const Text(
-        'Book Flight',
-        style: TextStyle(color: Colors.blue),
+    return Container(
+      width: _deviceWidth,
+      margin: EdgeInsets.only(bottom: _deviceHeight * 0.01),
+      decoration: BoxDecoration(
+        color: Color.fromARGB(248, 1, 32, 20),
+        borderRadius: BorderRadius.circular(10),
+      ),
+      child: MaterialButton(
+        onPressed: () {},
+        child: const Text(
+          'Book Flight',
+          style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+        ),
       ),
     );
   }
