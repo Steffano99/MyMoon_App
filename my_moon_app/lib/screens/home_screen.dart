@@ -1,3 +1,6 @@
+import 'dart:ffi';
+
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:my_moon_app/widgets/custom_dropdown.dart';
 
@@ -109,7 +112,7 @@ class HomeScreen extends StatelessWidget {
       width: _deviceWidth,
       margin: EdgeInsets.only(bottom: _deviceHeight * 0.01),
       decoration: BoxDecoration(
-        color: Color.fromARGB(248, 1, 32, 20),
+        color: const Color.fromARGB(248, 1, 32, 20),
         borderRadius: BorderRadius.circular(10),
       ),
       child: MaterialButton(

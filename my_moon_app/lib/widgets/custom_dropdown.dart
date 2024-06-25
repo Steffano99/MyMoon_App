@@ -1,5 +1,3 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
 
 class CustomDropdownButton extends StatelessWidget {
@@ -13,12 +11,12 @@ class CustomDropdownButton extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
       width: width,
       decoration: BoxDecoration(
-        color: Color.fromARGB(248, 1, 32, 20),
+        color: const Color.fromARGB(248, 1, 32, 20),
         borderRadius: BorderRadius.circular(10),
       ),
       child: DropdownButton(
         borderRadius: BorderRadius.circular(10),
-        dropdownColor: Color.fromRGBO(38, 143, 103, 0.643),
+        dropdownColor: const Color.fromRGBO(38, 143, 103, 0.643),
         style: const TextStyle(color: Colors.white),
         underline: Container(),
         value: values.first,

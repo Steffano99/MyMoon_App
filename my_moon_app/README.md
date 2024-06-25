@@ -1,12 +1,10 @@
 # my_moon_app
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+- This repository represents the starting point of an application built with flutter.
+- GoMoon is an application built purposely for astronauts and individuals who wishes to make a trip to the moon.
+- Virtually there are a lot more features to be added to this application to make it more realistic and appealing.
+- This project makes good use of a couple of some selected widgets, functionalities(Dart_Programming_Language), code reuse and a very nice way of presenting lines of codes, making it more concise and easy to manipulate.
+- This project is available for contributions, changes and cloning by other developers to be implemented in their projects.
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
