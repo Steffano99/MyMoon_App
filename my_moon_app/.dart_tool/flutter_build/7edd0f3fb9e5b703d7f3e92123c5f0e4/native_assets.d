@@ -1,0 +1,1 @@
+ C:\\Users\\BAAH\ AMOS\ ASENSO\\Desktop\\ESSENTIALS\\GITHUB\ CLONES\\MyMoon_App\\my_moon_app\\.dart_tool\\flutter_build\\7edd0f3fb9e5b703d7f3e92123c5f0e4\\native_assets.yaml: 

@@ -1,16 +1,16 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.my_moon_app-mergeDebugResources-9:/values-fa/values-fa.xml",
+            "outputFile": "com.example.my_moon_app-mergeDebugResources-25:/values-fa/values-fa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\BAAH AMOS ASENSO\\.gradle\\caches\\transforms-3\\d08c73bfb05384f2e52578171dbd141e\\transformed\\core-1.6.0\\res\\values-fa\\values-fa.xml",
+                    "source": "C:\\Users\\BAAH AMOS ASENSO\\.gradle\\caches\\transforms-3\\7b9cc716733896fdb33be34a758f3226\\transformed\\core-1.13.1\\res\\values-fa\\values-fa.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,154,256,355,455,556,662,779",
+                        "endColumns": "98,101,98,99,100,105,116,100",
+                        "endOffsets": "149,251,350,450,551,657,774,875"
                     }
                 }
             ]

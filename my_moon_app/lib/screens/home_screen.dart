@@ -45,12 +45,12 @@ class HomeScreen extends StatelessWidget {
       TextSpan(
         text: 'SPACE',
         style: TextStyle(
-            color: Colors.white, fontSize: 70, fontWeight: FontWeight.w700),
+            color: Colors.white, fontSize: 50, fontWeight: FontWeight.w700),
         children: [
           TextSpan(
             text: 'TRIP',
             style: TextStyle(
-                fontSize: 40,
+                fontSize: 35,
                 color: Color.fromARGB(255, 187, 235, 16),
                 fontWeight: FontWeight.w700),
           )

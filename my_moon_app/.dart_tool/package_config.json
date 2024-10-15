@@ -47,7 +47,7 @@
       "name": "flutter",
       "rootUri": "file:///C:/src/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "flutter_lints",
@@ -59,6 +59,24 @@
       "name": "flutter_test",
       "rootUri": "file:///C:/src/flutter/packages/flutter_test",
       "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "leak_tracker",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker-10.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "leak_tracker_flutter_testing",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_flutter_testing-3.0.5",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "leak_tracker_testing",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/leak_tracker_testing-3.0.1",
+      "packageUri": "lib/",
       "languageVersion": "3.2"
     },
     {
@@ -69,27 +87,27 @@
     },
     {
       "name": "matcher",
-      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/matcher-0.12.16+1",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.0"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.5.0",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/material_color_utilities-0.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.17"
     },
     {
       "name": "meta",
-      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.10.0",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/meta-1.15.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "path",
-      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.8.3",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/path-1.9.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.0"
     },
     {
       "name": "sky_engine",
@@ -129,9 +147,9 @@
     },
     {
       "name": "test_api",
-      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.6.1",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.2",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "vector_math",
@@ -140,10 +158,10 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "web",
-      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/web-0.3.0",
+      "name": "vm_service",
+      "rootUri": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache/hosted/pub.dev/vm_service-14.2.5",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.3"
     },
     {
       "name": "my_moon_app",
@@ -152,7 +170,10 @@
       "languageVersion": "3.2"
     }
   ],
-  "generated": "2024-06-14T22:51:19.226504Z",
+  "generated": "2024-10-13T18:08:26.852901Z",
   "generator": "pub",
-  "generatorVersion": "3.2.3"
+  "generatorVersion": "3.5.3",
+  "flutterRoot": "file:///C:/src/flutter",
+  "flutterVersion": "3.24.3",
+  "pubCache": "file:///C:/Users/BAAH%20AMOS%20ASENSO/AppData/Local/Pub/Cache"
 }
